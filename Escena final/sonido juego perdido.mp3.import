@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sonido juego perdido.mp3-8efa6066124d9ab0cce859bc87a6f98d.mp3str"
+
+[deps]
+
+source_file="res://Escena final/sonido juego perdido.mp3"
+dest_files=[ "res://.import/sonido juego perdido.mp3-8efa6066124d9ab0cce859bc87a6f98d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

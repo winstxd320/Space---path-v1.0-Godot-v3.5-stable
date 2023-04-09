@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nivel 1.mp3-fcd792098ce7860fcd06fe47397bd1a9.mp3str"
+
+[deps]
+
+source_file="res://Escena final/nivel 1.mp3"
+dest_files=[ "res://.import/nivel 1.mp3-fcd792098ce7860fcd06fe47397bd1a9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,250 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "D",
+"language": "GDScript",
+"path": "res://recursos nivel 3/diamante.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "D2",
+"language": "GDScript",
+"path": "res://recursos nivel 3/diamante2.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "D3",
+"language": "GDScript",
+"path": "res://recursos nivel 3/Oro3.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "D4",
+"language": "GDScript",
+"path": "res://recursos nivel 3/Oro4.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "D5",
+"language": "GDScript",
+"path": "res://recursos nivel 3/Oro5.gd"
+}, {
+"base": "Node2D",
+"class": "Diam",
+"language": "GDScript",
+"path": "res://diamante.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Diamante",
+"language": "GDScript",
+"path": "res://recursos nivel 2/Diamante.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "DobleSalto",
+"language": "GDScript",
+"path": "res://recursos nivel 3/doble salto.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "DobleSalto2",
+"language": "GDScript",
+"path": "res://recursos nivel 3/salto doble 2.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "DobleSalto3",
+"language": "GDScript",
+"path": "res://recursos nivel 3/doble salto 3.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "DobleSalto4",
+"language": "GDScript",
+"path": "res://recursos nivel 3/doble salto 4.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "DobleSalto5",
+"language": "GDScript",
+"path": "res://recursos nivel 3/doble salto 5.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Enemigo",
+"language": "GDScript",
+"path": "res://enemigo.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "JugadorNivel3",
+"language": "GDScript",
+"path": "res://recursos nivel 3/jugador nivel 3.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Meteoro1",
+"language": "GDScript",
+"path": "res://Meteoro.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Meteoro2",
+"language": "GDScript",
+"path": "res://Meteoro2.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Meteoro3",
+"language": "GDScript",
+"path": "res://Meteorito3.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Meteoro4",
+"language": "GDScript",
+"path": "res://Meteoro4.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Meteoro5",
+"language": "GDScript",
+"path": "res://Meteoro5.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Meteoro6",
+"language": "GDScript",
+"path": "res://Meteoro6.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Meteoro7",
+"language": "GDScript",
+"path": "res://Meteoro7.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Objeto1",
+"language": "GDScript",
+"path": "res://recursos nivel 2/Objeto1.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Objeto2",
+"language": "GDScript",
+"path": "res://recursos nivel 2/Objeto2.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Objeto3",
+"language": "GDScript",
+"path": "res://recursos nivel 2/Objeto3.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Objeto4",
+"language": "GDScript",
+"path": "res://recursos nivel 2/Objeto4.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Objeto5",
+"language": "GDScript",
+"path": "res://recursos nivel 2/Objeto5.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "ObjetoPuntos",
+"language": "GDScript",
+"path": "res://ObjetoPunto.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Personaje",
+"language": "GDScript",
+"path": "res://Personaje.gd"
+} ]
+_global_script_class_icons={
+"D": "",
+"D2": "",
+"D3": "",
+"D4": "",
+"D5": "",
+"Diam": "",
+"Diamante": "",
+"DobleSalto": "",
+"DobleSalto2": "",
+"DobleSalto3": "",
+"DobleSalto4": "",
+"DobleSalto5": "",
+"Enemigo": "",
+"JugadorNivel3": "",
+"Meteoro1": "",
+"Meteoro2": "",
+"Meteoro3": "",
+"Meteoro4": "",
+"Meteoro5": "",
+"Meteoro6": "",
+"Meteoro7": "",
+"Objeto1": "",
+"Objeto2": "",
+"Objeto3": "",
+"Objeto4": "",
+"Objeto5": "",
+"ObjetoPuntos": "",
+"Personaje": ""
+}
+
+[application]
+
+config/name="Space Path"
+run/main_scene="res://menu.tscn"
+config/icon="res://recursos nivel 3/caminar/Sprite-0003.png"
+
+[autoload]
+
+VariablesGlobales="*res://variables_globales.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+mp3={
+"loop": false,
+"loop_offset": 0
+}
+
+[input]
+
+saltar={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+2d_physics/layer_1="Personaje"
+2d_physics/layer_2="Meteoro"
+2d_physics/layer_3="Meteoro2"
+2d_physics/layer_4="ColisionInferior"
+2d_physics/layer_5="ColisionSuperior"
+2d_physics/layer_6="Meteoro3"
+2d_physics/layer_7="MuroSuperior"
+2d_physics/layer_8="MuroInzquierdo"
+2d_physics/layer_9="meteoro4"
+2d_physics/layer_10="ObjetoPunto"
+2d_physics/layer_11="Meteoro5"
+2d_physics/layer_12="Meteoro6"
+2d_physics/layer_13="Meteoro7"
+2d_physics/layer_14="Objeto1"
+2d_physics/layer_15="Objeto2"
+2d_physics/layer_16="Objeto3"
+2d_physics/layer_17="Objeto4"
+2d_physics/layer_18="Diamante"
+2d_physics/layer_19="BarraEstadistica"
+2d_physics/layer_20="Objeto5"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

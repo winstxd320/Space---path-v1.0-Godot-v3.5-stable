@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sonido vida.mp3-9e2c70e931bae6171947e5906d5f3cab.mp3str"
+
+[deps]
+
+source_file="res://recursos nivel 2/sonido vida.mp3"
+dest_files=[ "res://.import/sonido vida.mp3-9e2c70e931bae6171947e5906d5f3cab.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Kenney Pixel.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://corazón.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 2
+outline_color = Color( 0.0431373, 0.0352941, 0.0352941, 1 )
+font_data = ExtResource( 1 )
+
+[node name="+1" type="Node2D"]
+
+[node name="Texto" type="Label" parent="."]
+margin_left = 51.0
+margin_top = 2.0
+margin_right = 91.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 1 )
+text = "+1"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 26.503, 19.506 )
+scale = Vector2( 0.546813, 0.515438 )
+texture = ExtResource( 2 )

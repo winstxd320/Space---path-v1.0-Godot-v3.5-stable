@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sonido misterioso.mp3-f5ba042f6403d76727b724572c1b2230.mp3str"
+
+[deps]
+
+source_file="res://Escena final/sonido misterioso.mp3"
+dest_files=[ "res://.import/sonido misterioso.mp3-f5ba042f6403d76727b724572c1b2230.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

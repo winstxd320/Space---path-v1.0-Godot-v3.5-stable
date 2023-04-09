@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/musica_juego.mp3-3a1a452ff105470209b7b613a806da0e.mp3str"
+
+[deps]
+
+source_file="res://Escena final/musica_juego.mp3"
+dest_files=[ "res://.import/musica_juego.mp3-3a1a452ff105470209b7b613a806da0e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

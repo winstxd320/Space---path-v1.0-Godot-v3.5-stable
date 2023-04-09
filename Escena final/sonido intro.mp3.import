@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sonido intro.mp3-a188d499c08d64f1ac48d32e1c6a772a.mp3str"
+
+[deps]
+
+source_file="res://Escena final/sonido intro.mp3"
+dest_files=[ "res://.import/sonido intro.mp3-a188d499c08d64f1ac48d32e1c6a772a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

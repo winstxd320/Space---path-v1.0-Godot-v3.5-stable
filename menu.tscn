@@ -1,0 +1,117 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Kenney Pixel.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://buttonLarge.png" type="Texture" id=2]
+[ext_resource path="res://fondo nave.png" type="Texture" id=3]
+[ext_resource path="res://menu.gd" type="Script" id=4]
+[ext_resource path="res://sonido_intro.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Escena final/sonido intro.mp3" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 48
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 47
+font_data = ExtResource( 1 )
+
+[node name="menu" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 2.0
+margin_right = 1029.0
+margin_bottom = 600.0
+
+[node name="Jugar" type="TextureButton" parent="."]
+margin_left = 291.0
+margin_top = 312.0
+margin_right = 700.0
+margin_bottom = 399.0
+texture_normal = ExtResource( 2 )
+expand = true
+
+[node name="Label" type="Label" parent="Jugar"]
+margin_left = 55.0
+margin_top = 19.0
+margin_right = 357.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+text = "Jugar	"
+align = 1
+valign = 1
+
+[node name="Salir" type="TextureButton" parent="."]
+visible = false
+margin_left = 394.0
+margin_top = 492.0
+margin_right = 592.0
+margin_bottom = 563.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Salir"]
+margin_top = -2.0
+margin_right = 195.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Salir"
+align = 1
+valign = 1
+
+[node name="SpriteAsteoide" type="Sprite" parent="."]
+position = Vector2( 518, 161 )
+rotation = 0.722566
+scale = Vector2( 0.482815, 0.384435 )
+texture = ExtResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="Marca de agua" type="Label" parent="."]
+margin_left = 603.0
+margin_top = 553.0
+margin_right = 1034.0
+margin_bottom = 592.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0.929412, 0.952941, 0.137255, 1 )
+custom_colors/font_color_shadow = Color( 0.152941, 0.956863, 0.164706, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Programmed by WinstXD320"
+
+[node name="boton como jugar" type="TextureButton" parent="."]
+anchor_left = 0.034
+anchor_right = 0.184
+anchor_bottom = 0.23
+margin_left = 287.0
+margin_top = 411.0
+margin_right = 483.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 3, 0 )
+rect_scale = Vector2( 2, 1 )
+rect_pivot_offset = Vector2( -13, 0 )
+size_flags_stretch_ratio = 0.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 423.0
+margin_top = 422.0
+margin_right = 591.0
+margin_bottom = 458.0
+custom_fonts/font = SubResource( 4 )
+text = "Creditos"
+
+[node name="sonido intro" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+
+[connection signal="pressed" from="Jugar" to="." method="_on_Jugar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_Salir_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]
+[connection signal="pressed" from="boton como jugar" to="." method="_on_boton_como_jugar_pressed"]
